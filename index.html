@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
+    <main>
+        <div class="signup">
+            <header>Sign Up</header>
+            <form action="POST">
+                <label for="email">Email:</label>
+                <input id="email" type="email">
     
+                <label for="password">Password:</label>
+                <input id="password" type="password">
+
+                <label for="repeatpassword">Password:</label>
+                <input id="repeatpassword" type="password">
+    
+                <button name="signup" class="btn">Sign up</button>
+            </form>
+        </div>
+        <div class="login">
+            <header>Log In</header>
+            <form action="POST">
+                <label for="email">Email:</label>
+                <input id="email" type="email">
+    
+                <label for="password">Password:</label>
+                <input id="password" type="password">
+    
+                <button name="Log in" class="btn">Log in</button>
+            </form>
+        </div>
+    </main>
 </body>
 </html>
