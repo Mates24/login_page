@@ -59,9 +59,16 @@ main{
     font-weight: 500;
 }
 
+.signup{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
 .login{
     position: absolute;
-    left: 110%;
+    left: 200%;
+    transform: translate(-50%);
 }
 .login a{
     font-size: .7em;
@@ -103,16 +110,14 @@ form input{
     scale: 1.04;
 }
 
-.login-btn{
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translate(-50%);
+.login-btn,
+.signup-btn{
     font-size: 1rem;
     text-align: center;
     margin-top: 20px;
 }
-.login-btn span{
+.login-btn span,
+.signup-btn span{
     color: red;
     cursor: pointer;
 }
