@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link rel="stylesheet" href="style.css">
-    
-    <script src="script.js"></script>
 </head>
 <body>
     <main>
@@ -27,18 +25,17 @@
                 </div>
                 <form method="POST">
                     <label for="email">Email:</label>
-                    <input id="email" type="email" placeholder="Email">
+                    <input id="email" type="email" placeholder="Email" required>
         
                     <label for="password">Password:</label>
-                    <input id="password" type="password" placeholder="Password">
+                    <input id="password" type="password" placeholder="Password" required>
     
-                    <label for="repeatpassword">Repeat Password:</label>
-                    <input id="repeatpassword" type="password" placeholder="Repeat Password">
+                    <label for="psw-repeat">Repeat Password:</label>
+                    <input id="psw-repeat" type="password" placeholder="Repeat Password" required>
         
                     <button name="signup" class="btn">Sign up</button>
-
-                    <p class="login-btn">Already have an account? <span>Log In</span></p>
                 </form>
+                <p class="login-btn">Already have an account? <span>Log In</span></p>
             </div>
             <div class="login">
                 <header>
@@ -46,16 +43,19 @@
                 </header>
                 <form action="POST">
                     <label for="email">Email:</label>
-                    <input id="email" type="email" placeholder="Email">
+                    <input id="email" type="email" placeholder="Email" required>
         
                     <label for="password">Password:</label>
-                    <input id="password" type="password" placeholder="Password">
+                    <input id="password" type="password" placeholder="Password" required>
                     <a href="#">Forgot password?</a>
         
                     <button name="login" class="btn">Log in</button>
                 </form>
+                <p class="signup-btn">Don't have an account? <span>Sign Up</span></p>
             </div>
         </div>
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
