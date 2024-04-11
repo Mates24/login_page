@@ -15,12 +15,39 @@ body{
     padding: 0;
 }
 
+header nav.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 70px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px;
+}
+header nav.navbar ul{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+    font-weight: 500;
+}
+header nav.navbar ul li a{
+    color: #000;
+    text-decoration: none;
+}
+
+li.nav-login-btn{
+    padding: 5px 15px 7px 15px;
+    border: 3px solid #02ae23;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
 main{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-
+    height: calc(100vh - (1rem + 42.4px));
 }
 
 .container{
@@ -28,14 +55,16 @@ main{
     position: relative;
     flex-direction: column;
     justify-content: center;
-    height: 640px;
-    width: 480px;
+    height: 580px;
+    width: 440px;
     padding-inline: 25px;
     border-radius: 25px;
     background: transparent;
     box-shadow: black 0 0 15px;
     overflow: hidden;
     backdrop-filter: blur(50px);
+    transform: scale(0);
+    transition: transform .5s ease, height .2s ease;
 }
 
 .signup,
@@ -45,14 +74,14 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     font-size: 1.2rem;
 }
 
 .signup-with{
     display: flex;
     gap: 40px;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 .signup-with a{
     text-align: center;
@@ -87,6 +116,10 @@ main{
     left: 400%;
     transform: translate(-50%);
     transition: all 1.5s ease;
+    gap: 20px;
+}
+.forgot form input{
+    margin-bottom: 10px;
 }
 
 form{
@@ -97,7 +130,6 @@ form{
 }
 form label{
     font-weight: 500;
-    margin-top: 10px;
 }
 form input{
     height: 2.3rem;
@@ -134,7 +166,7 @@ form input:focus{
 .signup-btn{
     font-size: 1rem;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 .forgot-btn{
     font-size: .9rem;
