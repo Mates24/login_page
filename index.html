@@ -47,15 +47,26 @@
         
                     <label for="password">Password:</label>
                     <input id="password" type="password" placeholder="Password" required>
-                    <a href="#">Forgot password?</a>
-        
+                    
                     <button name="login" class="btn">Log in</button>
+                    
+                    <p class="forgot-btn">Forgot password</p>
                 </form>
                 <p class="signup-btn">Don't have an account? <span>Sign Up</span></p>
             </div>
+            <div class="forgot">
+                <header>
+                    <h1>Forgot password</h1>
+                </header>
+                <form action="POST">
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" placeholder="Email" required>
+        
+                    <button name="forgot" class="btn">Make new</button>
+                </form>
+            </div>
         </div>
     </main>
-
     <script src="script.js"></script>
 </body>
 </html>
