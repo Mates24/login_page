@@ -142,7 +142,18 @@ form input:focus{
     cursor: pointer;
 }
 .login-btn span,
-.signup-btn span{
+.signup-btn span,
+.back-to-signup-btn{
     color: red;
     cursor: pointer;
+}
+.back-to-login-btn{
+    color: blue;
+    cursor: pointer;
+}
+.back-btn{
+    display: flex;
+    font-size: 1rem;
+    text-align: center;
+    gap: 30px;
 }
