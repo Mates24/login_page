@@ -25,15 +25,15 @@
                 </div>
                 <form method="POST">
                     <label for="email">Email:</label>
-                    <input id="email" type="email" placeholder="Email" required>
+                    <input id="email" name="email" type="email" placeholder="Email" required>
         
                     <label for="password">Password:</label>
-                    <input id="password" type="password" placeholder="Password" required>
+                    <input id="password" name="password" type="password" placeholder="Password" required>
     
                     <label for="psw-repeat">Repeat Password:</label>
                     <input id="psw-repeat" type="password" placeholder="Repeat Password" required>
         
-                    <button name="signup" class="btn">Sign up</button>
+                    <button name="signup" class="btn" type="submit">Submit</button>
                 </form>
                 <p class="login-btn">Already have an account? <span>Log In</span></p>
             </div>
@@ -48,7 +48,7 @@
                     <label for="password">Password:</label>
                     <input id="password" type="password" placeholder="Password" required>
                     
-                    <button name="login" class="btn">Log in</button>
+                    <button name="login" class="btn" type="submit">Submit</button>
 
                     <p class="forgot-btn">Forgot password</p>
                 </form>
@@ -62,7 +62,7 @@
                     <label for="email">Email:</label>
                     <input id="email" type="email" placeholder="Email" required>
         
-                    <button name="forgot" class="btn">Send</button>
+                    <button name="forgot" class="btn" type="submit">Send</button>
                 </form>
                 <div class="back-btn">
                     <p class="back-to-signup-btn">Sign Up</p>
