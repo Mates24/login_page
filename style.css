@@ -35,6 +35,9 @@ header nav.navbar ul li a{
     color: #000;
     text-decoration: none;
 }
+header nav.navbar svg{
+    display: none;
+}
 
 li.nav-login-btn{
     padding: 5px 15px 7px 15px;
@@ -188,4 +191,17 @@ form input:focus{
     font-size: 1rem;
     text-align: center;
     gap: 30px;
+}
+
+@media(max-width: 600px){
+    header nav.navbar{
+        padding-inline: 30px;
+    }
+    header nav.navbar ul{
+        display: none;
+        flex-direction: column;
+    }
+    header nav.navbar svg{
+        display: initial;
+    }
 }
